@@ -1,0 +1,266 @@
+/* Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a,
+.dropdown,
+input::placeholder {
+  font-weight: 300;
+  color: rgba(109, 110, 113, 1);
+}
+a:hover {
+  color: rgba(7, 47, 87, 1);
+  text-decoration: none;
+}
+
+/* Navbar and Dropdown */
+.navbar-dropdown {
+  display: none;
+}
+.navbar-dropdown.show {
+  display: block;
+}
+.dropdown-icon,
+.menu-icon,
+.close-icon {
+  transition: transform 0.3s ease;
+}
+.menus {
+  color: rgba(109, 110, 113, 1);
+  font-weight: 300;
+}
+.custom-loginsign-btn {
+  border: 1px solid rgba(0, 115, 47, 1);
+  color: rgba(0, 115, 47, 1);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+.custom-loginsign-btn:hover {
+  background-color: rgba(0, 115, 47, 1);
+}
+.dropdown-lgscreen-style {
+  width: 290px;
+}
+.dropdown-lgscreen-style a {
+  text-decoration: none !important;
+}
+
+/* Hero Section */
+
+.hero-section {
+  background-image: url("/public/Herosection.png");
+  height: 609px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Overlay */
+.overlay {
+  background: linear-gradient(
+      356.01deg,
+      rgba(7, 47, 87, 0.75) 50.8%,
+      rgba(7, 47, 87, 0) 94.58%
+    ),
+    linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45));
+}
+
+/* Input field styling */
+.search-field {
+  width: 400px;
+  height: 56px;
+  padding-left: 1.4rem; 
+  padding-right: 1rem;
+  outline: none;
+
+  border-radius: 0.375rem; 
+  color: #1f2937; 
+  font-family: "Poppins", sans-serif;
+
+  background: white;
+  align-items: center;
+  display: flex;
+}
+
+/* Input placeholder styling */
+.search-field::placeholder {
+  font-weight: 300;
+  color: rgba(109, 110, 113, 1);
+}
+
+/* Search button styling */
+.search-button {
+  width: 118px;
+  height: 54px;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 115, 47, 1);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: rgba(0, 115, 47, 1);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgba(0, 115, 47, 0.9);
+}
+.click-url {
+  font-size: 17px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    text-align: center;
+    padding: 87px 13px;
+  }
+
+  .search-field {
+    width: 100%;
+    /* margin-top: 15px; */
+    padding: 0 1.2rem;
+  }
+
+  .search-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .input-div {
+    margin-top: 10px;
+  }
+}
+/* First sec */
+.locationBtns {
+  margin-left: 90px;
+  padding: 28px 0px;
+}
+
+/* Second Section */
+.second-sec {
+  padding: 120px 0;
+}
+.secondsec-row-first {
+  margin-bottom: 120px;
+}
+.secondsec-row-second {
+  display: flex;
+  align-items: center;
+  padding: 150px 90px;
+  background: rgba(7, 47, 87, 1);
+}
+.youtubeicon {
+  background: rgba(246, 28, 13, 1);
+  width: 70px;
+  height: 50px;
+  border-radius: 11px;
+}
+.tab-opt {
+  width: 50%;
+}
+.tab {
+  margin-left: 38px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    text-align: center;
+    padding: 87px 13px;
+  }
+  .search-field,
+  .search-button {
+    width: 100%;
+    /* margin-top: 15px; */
+  }
+  .secondsec-row-second {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .tab-opt {
+    width: 100%;
+  }
+  .dropdown-smscreen-style {
+    top: 37px;
+    right: -26px;
+    width: 231px;
+    padding: 15px;
+  }
+
+  input::placeholder {
+    font-size: 15px;
+  }
+  .search-field svg {
+    font-size: 13px;
+  }
+  .click-url {
+    display: block;
+    margin-top: 5px;
+  }
+  /* First sec */
+  .locationBtns {
+    margin-left: 0px;
+    padding-inline: 10px;
+    margin-top: 26px;
+  }
+
+  .second-sec {
+    padding: 84px 0;
+  }
+  .secondsec-row-first {
+    margin-bottom: 86px;
+  }
+  .youtubeicon {
+    background: rgba(246, 28, 13, 1);
+    width: 55px;
+    height: 33px;
+    border-radius: 11px;
+  }
+  .tab {
+    margin-left: 0px;
+  }
+  .supplier-banner__button {
+    margin-top: 49px;
+  }
+  .howitworks {
+    padding: 80px 0px !important;
+  }
+}
+
+/* second sec */
+.signupbtn {
+  background-color: rgba(0, 115, 47, 1);
+}
+
+/*  */
+.suppliersbanner {
+  padding: 110px 0px;
+  background: rgba(232, 251, 255, 1);
+}
+.supplier-banner__button {
+  font-weight: 700;
+  padding: 12px 46px;
+}
+.howitworks {
+  padding: 150px 0px;
+}
+.footer-lists:hover {
+  color: #8fb7e1;
+  text-decoration: underline;
+  padding: 8px 0px;
+}

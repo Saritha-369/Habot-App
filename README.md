@@ -1,0 +1,1 @@
+#This project uses React and is mainly styled with Tailwind CSS, with some custom CSS for specific details. It focuses on responsive design and follows WCAG guidelines to ensure accessibility for all users.
